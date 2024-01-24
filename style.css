@@ -1,0 +1,179 @@
+
+*{
+	margin: 0;
+	padding: 0;
+
+}
+
+body{
+	height: 200vh;
+	font-family: 'Roboto', sans-serif;
+}
+
+/* ----------BACKGROUND ANIMATION-------------------------------------------- */
+
+.landing-container{
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient(360deg, rgb(211, 191, 191) 10%, rgb(155, 135, 135) 35%, rgb(0, 0, 0) 100%);
+	background-attachment: fixed;
+	padding: 0px 8%;
+}
+
+
+/* --------------------------------------------------------------------------- */
+
+
+
+
+/* ----------NAVBAR-------------------------------------------- */
+nav ul li{
+	display: inline-block;
+}
+
+nav ul li a{
+	padding: 0px 10px 8px 10px;
+	margin-right: 30px;
+	text-decoration: none;
+	color: aliceblue;
+	font-family: 'Poppins', sans-serif;
+	font-weight:bold;
+	font-size: large;
+}
+
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+	transition: all .3s;
+}
+nav ul li a:hover {
+	color: #00d9ff;
+}
+/* nav-bar */
+nav.nav-bar ul li a{
+	position: relative;
+}
+
+nav.nav-bar ul li a:after{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 0%;
+	content: '.';
+	color: transparent;
+	background: #00d9ff;
+	height: 1.5px;
+}
+
+	nav.nav-bar ul li a:hover:after {
+	width: 100%;
+}
+
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2% 8% 0px 8%;
+	background-color: transparent;
+	transition: 0.4s;
+
+}
+
+.sticky{
+	padding: 15px 8% 0px 8% ;
+	background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5))
+}
+
+.sticky ul li a{
+	color: #fff;
+}
+
+
+/* --------------------------------------------------------------------------- */
+
+
+
+/* ----------INTRODUCTION-------------------------------------------- */
+.caption{
+	display: flex;
+	align-items: center;
+	height: 88%;
+	justify-content: space-evenly;
+	padding-top: 10%;
+}
+
+.caption img{
+height: 500px;
+}
+
+.intro{
+	color: aliceblue;
+	text-align: left;
+}
+
+.intro h5{
+	font-family: 'Poppins', sans-serif;
+}
+
+.intro h1{
+	font-family: 'Oxygen', sans-serif;
+}
+
+.intro h6{
+	font-family: 'Nunito', sans-serif;
+}
+
+.intro img{
+	z-index: 0;
+}
+/* --------------------------------------------------------------------------- */
+
+
+/* ----------ABOUT ME-------------------------------------------- */
+.about-container{
+	background-color: blueviolet;
+	width: 100%;
+	height: 100vh;
+	
+}
+
+/* --------------------------------------------------------------------------- */
+
+
+
+
+/* .container1{
+	width: 100%;
+	height: 500px;
+	background-position: center;
+	background-image: url(images/bg1.jpg);
+	color: aliceblue;
+	background-size: cover;
+	background-attachment: fixed;
+} */
+
+/* .container2{
+	width: 100%;
+	height: 500px;
+	background-position: center;
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(images/bg2.jpg);
+	color: aliceblue;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.container3{
+	width: 100%;
+	height: 500px;
+	background-position: center;
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(images/bg3.jpg);
+	color: aliceblue;
+	background-size: cover;
+	background-attachment: fixed;
+} */
