@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@700&display=swap');
+
+body {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* HEADER */
+
+.container {
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+}
+
+nav{
+    position: sticky;
+    top: 70px;
+}
+
+
+ul, a {
+    list-style-type: none;
+    text-decoration: none;
+    color: #000;
+}
+
+header {
+    display: flex;
+    justify-content:space-between;
+}
+
+.nav-logo{
+    margin: -10PX 0 0 50px;
+    font-family: 'Lexend Deca', sans-serif;
+    color: #0272b3;
+    position: sticky;
+    top: 0;
+}
+
+.nav-bar {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: #0272b3;
+    margin: -10PX -10PX;
+    padding: 10px;
+}
+
+.nav-bar a:hover{
+    color: #ffffff;
+}
+
+.nav-bar li{
+    margin: 0px 60px;
+}
+
+
+.dropbtn, .nav-link-item{
+    color: #ffffff;
+}
+
+.nav-link-item:hover, .dropbtn:hover  {
+    background-color: #1f2f39;
+    padding: 10px;
+    margin: -10px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 160px;
+    z-index: 1;
+    margin-top: 10px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #0272b3;}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#cart {
+    position: absolute;
+    width:30px;
+    top: 18px;
+    right: 190px;
+}
+
+#cart:hover, #user:hover, #login:hover{
+    background-color: #2198dd;
+}
+
+#user {
+    position: absolute;
+    width:30px;
+    top: 16px;
+    right: 120px;
+}
+
+#login{
+    position: absolute;
+    top: 17px;
+    right: 255px;
+    font-size: 17px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+.search{
+    position: absolute;
+    top: 18px;
+    right: 450px;
+}
+
+input{
+    width: 400px;
+    height: 25px;
+}
+
+button{
+    height: 30px;
+}
+
+
+
+
+/* Login Form */
+
+
+.login-class {
+    display: none;
+    position: fixed;
+    align-content: center;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+
+.login-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 5px;
+    border: 1px solid #888;
+    width: 28%;
+    height: 68%;
+    border-radius: 5px;
+}
+
+.login-class h2{
+    margin-bottom: 30px;
+}
+
+.login-class label {
+    margin: 0px 20px 0px 35px ;
+}
+
+.login-class input{
+    margin: 10px 20px 0px 35px ;
+    width: 300px;
+}
+
+.login-class button{
+    width: 80%;
+    height: 35px;
+    margin: 27px 0px 20px 35px;
+    font-size: 20px;
+    color: #fff;
+    background-color: rgb(0, 117, 190);
+    border:  none;
+}
+
+.submitbtn {
+    float: right;
+    width: auto;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 10px;
+}
+
+.login-class a{
+    color: #0272b3;
+}
+
+.login-class a:hover{
+    color: #0272b3;
+    text-decoration: underline;
+}
+
+hr{
+    width: 350px;
+}
+
+
+
+
+/* MAIN */
+
+
+aside{
+    display: grid;
+    justify-content: center;
+}
+
+.poster1{
+    width: 70vw;
+    height: 45vh;
+    margin-top: 30px;
+    
+}
+
+.title{
+    margin: 120px 0 50px 100px;
+}
+
+#book{
+    width: 120px;
+    margin: 20px 0px 20px 120px;
+}
+
+
+
+
+/* FOOTER */
+
+footer{
+    background-color: #2C3333;
+    margin: 0px;
+    width: 100%;
+    height: 260px;
+}
+
+.footer-box{
+    display: flex;
+}
+
+
+footer li{
+    color: #fff;
+    margin: 10px 5px 0px 20px;
+}
+
+footer a{
+    color: #fff;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+footer hr{
+    width: 80em;
+}
+
+footer p{
+    color: #fff;
+    padding: 10px 0px 20px 0px;
+}
+

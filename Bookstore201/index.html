@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="frontend/index.css">
+    <title>BOOKSTORE201</title>
+</head>
+<body>
+
+    <!--HEADER-->
+    <div class="container">
+        <header>
+                <div class="nav-logo">
+                    <h1>BOOKSTORE201</h1>
+                </div>
+
+                <form class="search">
+                    <input type="text" placeholder="Search...">
+                    <button type="submit">Search</button>
+                </form>
+    
+                <div class="side-nav">	 
+                    <!-- Login/Register -->
+            
+                    <button onclick="document.getElementById('login-id').style.display='block'" id="login"> LOGIN/REGISTER</button>
+
+                    <div id="login-id" class="login-class">
+                        <form class="login-content" action="">
+                            <h2><center>Login</center></h2>
+
+                            <label id="email" for="email">Email</label><br>
+                            <input type="text" placeholder="Enter your Email" name="email" required><br><br>
+                
+                            <label id="pass" for="password">Password</label><br>
+                            <input type="password" placeholder="Enter your Password" name="password" required>
+                
+                            <button type="submit">Login</button><br>
+                            
+                            <a href="#forgot" id="forgot"><center>Forgot Password?</center></a><br>
+
+                            <hr>
+                            <center><p>Don't have an account? <a href="#a">Register now</a></p></center>
+                        </form>
+                    </div>
+
+                    <script>
+                        window.onclick = function(event) {
+                        var modal = document.getElementById('login-id');
+                        if (event.target == modal) {
+                        modal.style.display = "none";
+                        }
+                    }
+                    </script>
+                    <!-- End of Login/Register -->
+
+                    <a href="#cart"><img id="cart" src="images/cart.png" alt="Cart"></a>
+                    <a href="#user"><img id="user" src="images/user.png" alt="User"></a>
+                </div>
+        <header>			
+    </div>		
+
+    <nav>
+        <ul class="nav-bar">
+            <li class="nav-item"><a href="index.html" class="nav-link-item">HOME</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">CATEGORY</a>
+                <div class="dropdown-content">
+                    <a href="fiction.html">Fiction</a>
+                    <a href="horror.html">Horror</a>
+                    <a href="#">Romance</a>
+                </div>
+            </li>
+            <li class="nav-item"><a href="#home" class="nav-link-item">CONTACT US</a></li>
+            <li class="nav-item"><a href="#home" class="nav-link-item">ABOUT</a></li>
+        </ul>
+    </nav>
+    
+    <!--CONTENT-->
+    <aside class="poster">
+        <img class="poster1" src="images/book2.jpg" alt="poster">
+    </aside>   
+
+    <main>
+        <div class="collection">
+		
+            <h1 class="title">BEST SELLERS</h1>
+            <div class="bestsellers">
+                <img id="book" src="images/rings.jpg" alt="Books">
+                <img id="book" src="images/harry.jpg" alt="Books">
+                <img id="book" src="images/vinci.jpg" alt="Books">
+                <img id="book" src="images/narnia.jpg" alt="Books">
+                <img id="book" src="images/seven.jpg" alt="Books">
+            </div>
+
+            <h1 class="title">RECOMMENDATION</h1>
+            <div class="reco">
+                <img id="book" src="images/rings.jpg" alt="Books">
+                <img id="book" src="images/harry.jpg" alt="Books">
+                <img id="book" src="images/vinci.jpg" alt="Books">
+                <img id="book" src="images/narnia.jpg" alt="Books">
+                <img id="book" src="images/seven.jpg" alt="Books">
+            </div>
+    
+        </div>	
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-box">
+            <ul class="company">
+                <li style="font-size: 20px;">Company</li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Store Location</a></li>
+            </ul>
+
+            <ul>
+                <li>SERVICE</li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Privacy and Cookie Policy</a></li>
+            </ul>
+
+            <ul>
+                <li>PAYMENT METHODS</li>
+                <li>Cash on delivery</li>
+                <li>Credit/Debit Cards <br>
+                Digital Wallets (GCash, Paymaya) <br>
+                Online Banking</li>
+            </ul>
+        </div>   
+
+        <hr>
+
+        <center><p>Copyright &copy; 2023 BOOKSTORE201. Designed by Group3</p></center>
+    </footer>
+
+    
+
+</body>
+</html>

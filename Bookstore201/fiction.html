@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="frontend/fiction.css">
+    <title>BOOKSTORE201</title>
+</head>
+<body>
+
+    <!--HEADER-->
+    <div class="container">
+        <header>
+                <div class="nav-logo">
+                    <h1>BOOKSTORE201</h1>
+                </div>
+
+                <form class="search">
+                    <input type="text" placeholder="Search...">
+                    <button type="submit">Search</button>
+                </form>
+    
+                <div class="side-nav">	 
+
+                    <!-- Login/Register -->
+            
+                    <button onclick="document.getElementById('login-id').style.display='block'" id="login"> LOGIN/REGISTER</button>
+
+                    <div id="login-id" class="login-class">
+                        <form class="login-content" action="">
+                            <h2><center>Login</center></h2>
+
+                            <label id="email" for="email">Email</label><br>
+                            <input type="text" placeholder="Enter your Email" name="email" required><br><br>
+                
+                            <label id="pass" for="password">Password</label><br>
+                            <input type="password" placeholder="Enter your Password" name="password" required>
+                
+                            <button type="submit">Login</button><br>
+                            
+                            <a href="#forgot" id="forgot"><center>Forgot Password?</center></a><br>
+
+                            <hr>
+                            <center><p>Don't have an account? <a href="#a">Register now</a></p></center>
+                        </form>
+                    </div>
+
+                    <script>
+                        window.onclick = function(event) {
+                        var modal = document.getElementById('login-id');
+                        if (event.target == modal) {
+                        modal.style.display = "none";
+                        }
+                    }
+                    </script>
+                    <!-- End of Login/Register -->
+
+                    <a href="#cart"><img id="cart" src="images/cart.png" alt="Cart"></a>
+                    <a href="#user"><img id="user" src="images/user.png" alt="User"></a>
+                </div>
+        <header>			
+    </div>		
+
+    <nav>
+        <ul class="nav-bar">
+            <li class="nav-item"><a href="index.html" class="nav-link-item">HOME</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">CATEGORY</a>
+                <div class="dropdown-content">
+                    <a href="fiction.html">Fiction</a>
+                    <a href="horror.html">Horror</a>
+                    <a href="#">Romance</a>
+                </div>
+            </li>
+            <li class="nav-item"><a href="#home" class="nav-link-item">CONTACT US</a></li>
+            <li class="nav-item"><a href="#home" class="nav-link-item">ABOUT</a></li>
+        </ul>
+    </nav>
+        
+    <!--CONTENT-->
+
+    <h1><center>FICTION</center></h1>
+    
+    <center><table>
+        <tr>
+            <td>
+                <img id="fiction" src="images/hobbit.jpg" alt="Book">
+                <span id="title"> The Hobbit </span> 
+                <span id="author"> J.R.R. Tolkien </span>
+            </td>
+
+            <td>
+                <img id="fiction" src="images/vinci.jpg" alt="Book">
+                <span id="title"> The Da Vinci <br><center>Code</center></span> 
+                <span id="author"> Dan Brown </span>
+            </td>
+
+            <td>
+                <img id="fiction" src="images/harry.jpg" alt="Book">
+                <span id="title"> Harry Potter & The <br>Philosopher's Stone </span>
+                <span id="author">J.K. Rowling </span>
+            </td>
+        </tr>
+
+        <tr>  
+            <td><img id="fiction" src="images/hunger.jpg" alt="Book">
+                <span id="title"> The Hunger Games </span> 
+                <span id="author"> Suzanne Collins </span>
+            </td>
+
+            <td><img id="fiction" src="images/wave.jpg" alt="Book">
+                <span id="title"> The 5th Wave </span> 
+                <span id="author"> Rick Yancey </span>
+            </td>
+
+            <td><img id="fiction" src="images/nightingale.jpg" alt="Book">
+                <span id="title"> The Nightingale </span> 
+                <span id="author"> Kristin Hannah </span>
+            </td>
+        </tr>
+
+        <tr>  
+            <td>
+                <img id="fiction" src="images/circle.jpg" alt="Book">
+                <span id="title"> Great Circle </span> 
+                <span id="author">  Maggie Shipstead </span>
+            </td>
+
+            <td>
+                <img id="fiction" src="images/gonegirl.jpg" alt="Book">
+                <span id="title"> Gone Girl </span> 
+                <span id="author"> Gillian Flynn </span>
+            </td>
+
+            <td>
+                <img id="fiction" src="images/gatsby.jpg" alt="Book">
+                <span id="title"> The Great Gatsby </span> 
+                <span id="author"> F. Scott Fitzgerald </span>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <img id="fiction" src="images/project.jpg" alt="Book">
+                <span id="title"> Project Hail Mary </span> 
+                <span id="author"> Andy Weir </span>
+            </td>
+
+            <td>
+                <img id="fiction" src="images/circus.jpg" alt="Book">
+                <span id="title"> The Night Circus </span> 
+                <span id="author"> Erin Morgenstern </span> 
+            </td>
+
+            <td>
+                <img id="fiction" src="images/wind.jpg" alt="Book">
+                <span id="title"> The Four Winds </span> 
+                <span id="author"> Kristin Hannah </span>
+            </td>
+        </tr>
+
+    </table></center>
+
+</body>
+</html>
